@@ -89,7 +89,6 @@ class ReferralsCommand(val plugin: Referrals) : TabExecutor {
             requirements.forEach {
                 launch {
                     val success = it.evaluate()
-                    println("${it.javaClass.name} - $success")
                     if (!success) requirementsSatisfied = false
                     requirementLoreLines.add(it.message)
                 }
