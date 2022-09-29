@@ -1,0 +1,5 @@
+rewards:
+  base-payment: 4000
+requirements:
+  days-since-first-join-limit: 30
+  playtime-in-hours: 12

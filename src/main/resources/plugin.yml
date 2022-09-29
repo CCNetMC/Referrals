@@ -1,0 +1,11 @@
+name: Referrals
+version: '${version}'
+main: com.ccnetmc.referrals.Referrals
+api-version: 1.19
+depend: [ Towny, LuckPerms ]
+authors: [ Zaify ]
+description: Referrals plugin for Nations.
+commands:
+  recruitbonus:
+    description: Claim a recruitment bonus.
+    permission: ccnet.nations.recruitbonus
