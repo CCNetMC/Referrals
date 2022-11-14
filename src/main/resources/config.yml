@@ -1,5 +1,6 @@
 rewards:
-  base-payment: 4000
+  base-payment: 5000
+  recruitee-payment: 2500
 requirements:
   days-since-first-join-limit: 30
   playtime-in-hours: 12
