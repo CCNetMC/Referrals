@@ -110,7 +110,7 @@ class ReferralsCommand(val plugin: Referrals) : TabExecutor {
 
         paginatorPane.page = 0
 
-        val fillerPaneItem = ItemStack(Material.WHITE_STAINED_GLASS_PANE)
+        val fillerPaneItem = ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE)
         fillerPaneItem.editMeta { meta -> meta.displayName(Component.empty()) }
         val fillerPane = PatternPane(0, 0, paginatorPane.length, paginatorPane.height, Pattern("111111111", "111111111", "111111111", "111111111", "111111111"))
         fillerPane.bindItem('1', GuiItem(fillerPaneItem))
@@ -270,7 +270,7 @@ class ReferralsCommand(val plugin: Referrals) : TabExecutor {
 
         val requirements = listOf(
             StayedInTownRequirement(resident),
-            FirstJoinRequirement(player),
+            FirstJoinRequirement(resident),
             PlaytimeRequirement(player),
             RankRequirement(player)
         )
